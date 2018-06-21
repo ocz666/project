@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/android:icon2"
+        android:layout_width="148dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/registered"
+        android:layout_marginTop="55dp"
+        android:layout_weight="0.15"
+        android:layout_height="148dp" />
+
+    <EditText
+        android:id="@+id/Rusername"
+        android:layout_height="wrap_content"
+        android:layout_width="288dp"
+        android:hint="input your username"
+        android:layout_gravity="center"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/ID"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:hint="input you IDnumber"
+        android:layout_gravity="center"
+        android:maxLines="1"
+        android:layout_below="@+id/username"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/key"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:hint="input you password"
+        android:layout_gravity="center"
+        android:maxLines="1"
+        android:layout_below="@+id/ID"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/keyc"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:hint="input you password again"
+        android:maxLines="1"
+        android:layout_gravity="center"
+        android:layout_below="@+id/key"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/registered"
+        android:layout_height="wrap_content"
+        android:text="register"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_marginBottom="11dp"
+        android:layout_width="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_above="@+id/login_registered"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/login_registered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="have username, login"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</LinearLayout>

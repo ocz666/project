@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cebook.example.com.cebook">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="cebook.example.com.cebook.ACTION_START" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="cebook.example.com.cebook.LOG_IN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Pbl"
+            android:label="Personal books">
+            <intent-filter>
+                <action android:name="cebook.example.com.cebook.ACTION_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="cebook.example.com.cebook.PERSONAL_BOOK" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Main page">
+            <intent-filter>
+                <action android:name="cebook.example.com.cebook.ACTION_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="cebook.example.com.cebook.MAIN_PAGE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".register">
+            <intent-filter>
+                <action android:name="cebook.example.com.cebook.ACTION_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="cebook.example.com.cebook.REGISTER_PAGE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".One"
+            android:label="休闲一读">
+            <action android:name="cebook.example.com.cebook.ACTION_START" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="cebook.example.com.cebook.ONE_PAGE" />
+        </activity>
+        <activity
+            android:name=".Two"
+            android:label="品读经典">
+            <action android:name="cebook.example.com.cebook.ACTION_START" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="cebook.example.com.cebook.TWO_PAGE" />
+        </activity>
+        <activity
+            android:name=".three"
+            android:label="励志之路">
+            <action android:name="cebook.example.com.cebook.ACTION_START" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="cebook.example.com.cebook.THREE_PAGE" />
+        </activity>
+        <activity
+            android:name=".four"
+            android:label="科技黑洞">
+            <action android:name="cebook.example.com.cebook.ACTION_START" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="cebook.example.com.cebook.FOUR_PAGE" />
+        </activity>
+        <activity
+            android:name=".searchOut"
+            android:label="search out">
+            <intent-filter>
+                <action android:name="cebook.example.com.cebook.ACTION_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="cebook.example.com.cebook.SEARCH_OUT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chatwindow"
+            android:label="chat windown">
+            <intent-filter>
+                <action android:name="cebook.example.com.cebook.ACTION_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="cebook.example.com.cebook.CHAT_WINDOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".userinfo"
+            android:label="user info">
+            <intent-filter>
+                <action android:name="cebook.example.com.cebook.ACTION_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="cebook.example.com.cebook.USER_INFO" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".personalInfo">
+            <intent-filter>
+                <action android:name="cebook.example.com.cebook.ACTION_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="cebook.example.com.cebook.PERSONAL_INFO" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".addBook">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".delBook" />
+        <activity android:name=".recBook"></activity>
+    </application>
+
+</manifest>
